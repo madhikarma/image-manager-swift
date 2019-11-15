@@ -7,6 +7,10 @@ public final class ImageManager {
     
     
     // MARK: - Public
+
+    public init() {
+        
+    }
     
     public func loadImage(for url: URL, completion: @escaping (Result<UIImage, ImageManagerError>) -> ()) {
         if let image = cachedImage(for: url) {
